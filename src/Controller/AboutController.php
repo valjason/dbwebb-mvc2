@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AboutController extends AbstractController
 {
     #[Route('/about', name: 'about')]
-    public function test(): Response
+    public function about(): Response
     {
         //return new Response("<h1>It abouts!</h1>");
 		return $this->render("about/about.html.twig");

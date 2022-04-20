@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class DefaultController extends AbstractController
 {
 	#[Route('/', name: 'base')]
-	public function test(): Response
+	public function base(): Response
 	{
 		//return new Response("<h1>It defaults!</h1>");
 		return $this->render("base.html.twig");
